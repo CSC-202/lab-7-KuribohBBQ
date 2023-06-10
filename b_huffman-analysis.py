@@ -5,15 +5,13 @@
 import matplotlib.pyplot as plt
 
 # DATA - lyrics
-POKEMON_LYRICS = 'I wanna be the very best. Like no one ever was. To catch them is my real test. To train them is my cause. I will travel across the land. Searching far and wide. Each Pokemon to understand. The power that\'s inside. (Pokemon, gotta catch \'em all.) Its you and me. I know it\'s my destiny. (Pokemon.) Oh, you\'re my best friend. In a world we must defend. (Pokemon, gotta catch \'em all.) A heart so true. Our courage will pull us through. You teach me and I\'ll teach you. Pokemon. (gotta catch \'em all.) Gotta catch \'em all. Yeah. Every challenge along the way. With courage I will face. I will battle every day. To claim my rightful place. Come with me, the time is right. There\'s no better team. Arm in arm we\'ll win the fight. It\'s always been our dream. (Pokemon, gotta catch \'em all.) Its you and me. I know it\'s my destiny (Pokemon.) Oh, you\'re my best friend. In a world we must defend. (Pokemon, gotta catch \'em all.) A heart so true. Our courage will pull us through. You teach me and I\'ll teach you. Pokemon (gotta catch \'em all.) Gotta catch \'em all. Gotta catch \'em all. Gotta catch \'em all. Gotta catch \'em all. Yeah! (Pokemon, gotta catch \'em all). Its you and me. I know it\'s my destiny. (Pokemon) Oh, you\'re my best friend. In a world we must defend. (Pokemon, gotta catch \'em all.) A heart so true. Our courage will pull us through. You teach me and I\'ll teach you Pokemon. (gotta catch \'em all). Gotta catch \'em all. (Pokemon)'
-JIGGLE_JIGGLE = 'You have to have something that sticks. You have to have something that\'s monumental. When you walk out on stage, that\'s been monumental. (Jiggle, jiggle) Can you remember any of the rap that you did? My money don\'t jiggle, jiggle, it folds. I like to see you wiggle, wiggle, for sure. It makes me want to dribble, dribble, you know. Riding in my Fiat, you really have to see it. Six feet two in a compact, no slack. But luckily the seats go back. I got a knack to relax in my mind. Sipping some red, red wine. I sip booze from chalices, holding my palaces. Crib is so crampy suckers suffer from paralysis. Rhymes, I write them in the castle. You try to diss me and pretty soon your ass. Will squat in a cell \'cause I can tell you it\'s illegal. Treason, that\'s the reason I\'m regal. You do the time for the crime of lèse-majesté. And **** the police \'cause they can\'t arrest me. (They can\'t arrest me, they can\'t arrest me). (I like to see you wiggle, it makes me dribble, fancy a fiddle?). My money don\'t jiggle, jiggle, it folds. I like to see you wiggle, wiggle, for sure. It makes me want to dribble, dribble, you know. Riding in my Fiat, you really have to see it. Six feet two in a compact, no slack. But luckily the seats go back. I got a knack to relax in my mind. Sipping some red, red wine. (I like to see you wiggle, it makes me dribble, fancy a fiddle?). (I like to see you wiggle, it makes me dribble, fancy a fiddle?). (I like to see you wiggle, it makes me dribble, fancy a fiddle?). (I like to see you wiggle, it makes me dribble, fancy a fiddle?)'
-ALPHABET = 'Now it\'s time for our wrap up. Let\'s give it everything we\'ve got. Ready, begin. Artificial amateurs aren\'t at all amazing. Analytically, I assault, animate things. Broken barriers bounded by the bomb beat. Buildings are broken, basically I\'m bombarding. Casually create catastrophes, casualties. Canceling cats got their canopies collapsing. Detonate a dime of dank daily doin\' dough. Demonstrations, Don Dada on the down low. Eatin\' other editors with each and every energetic. Epileptic episode, elevated etiquette. Furious fat fabulous fantastic. Flurries of funk felt feeding the fanatics. Imitators idolize, I intimidate. In a instant, I\'ll rise in a irate state. Juiced on my jams like jheri curls, jockin\' joints. Justly, it\'s just me, writin\' my journals. Kindly I\'m kindling all kinds of ink on. Karate kick type Brits in my kingdom. Let me live a long life, lyrically lessons is. Learned lame louses just lose to my livery. My mind makes marvelous moves, masses. Marvel and move, many mock what I\'ve mastered.  Niggas nap knowin\' I\'m nice naturally. Knack, never lack, make noise nationally.  Operation, opposition, off, not optional. Out of sight, out of mind, wide beaming opticals. Perfected poem, powerful punchlines. Pummeling petty powder puffs in my prime. Quite quaint quotes keep quiet it\'s Quannum Quarrelers ain\'t got a quarter of what we got, uh. Really raw raps, risin\' up rapidly. Riding the rushing radioactivity. Super scientifical sound search sought. Silencing super fire saps that are soft. Tales ten times talented, they\'re too tough. Take that, challengers, get a tune up. Universal, unique untouched. Unadulterated, the raw uncut. Verb vice Lord victorious valid. Violate vibes that are vain make \'em vanished. Why I\'m all well, would a wise wordsmith. Just weaving up words weeded up, on my work shift. Xerox, my X-ray-diation holes extra large. X-height letters and xylophone tones.'
-
+MYSTERIOUS_DESTINY = 'Bayonetta, you mystery (Who...) You came along with a destiny (...Are you) This is your life A battlefield telling you who you are (A mystery) Bayonetta, this is your time (Hold tight) You gonna sparkle, You gonna shine (Moonlight) Girl when you fight, it looks like a dance You are magic, youre magic (Youre dancing beautifully) Cmon, cmon Come on, theres only one way. Your way. Cmon Come on, you know theres only one way. Your way. Dance, fight. Spin around, spin around. Dance, fight Fly higher, fly higher, fly higher. Bayonetta, you bury your loneliness deep down in your eyes (Beautiful, beautiful, so powerful, so lonely). Sadness lies in your smile (Lonely heart) But victory shines in your eyes. (You will find it) Youre still alive (Deep, deep-deep, deep down) (Deep down inside, victory) Ooooh...'
+AL_FINE = 'Awoken by whispers of destiny I reach for you as youre calling out my name Longing for your touch to bring me back to life Only you can save me, rekindle this flame A hundred miles away I hear your heart It beats for me, we can never be apart This is the time I knew I knew you could be the only one to (We are one, fate has come now) Come and take away darkness (In this great moment) I know youll miss me when Im gone (Magic surrounds you) Save your tears, this is where we belong (Our, our love is true!) My desire, my Achilles heel Youve tamed this cursed beast The sorrow released I spread my wings We will fly into far away galaxies just you and I And when this ends Hold on tight to our memories Dont let them end I fall weak, I tremble to speak (Like stars, we glow) As I take my last breaths, Im the happiest Ive ever been (Shine on, shine on) Ocean blue, I look into your eyes (Trust, we are here now) I know that you will be here, by my side, (Theres no one else but you) My Cheshire'
+TOMORROW_IS_MINE = 'You awoke me (Fight fire) Unleashed the fire in my heart (With fire) I will dance and Ill defeat them (My flames) Through the light and the dark (More bright) Your mistake was to (The moon) Underestimate my power (Is my fuel) Wont let go of the fight (Get lost) Til tomorrows mine (In my tide) I will ignite Dancin through the fire around me Ill never stop Youd better hide Now Im in the mood for a fight (Better watch out here I come) You wont know what hit you When I spin around Leave you in my dust Then bang bang Down down again Its my desire Going for the win Tomorrow Is Mine You better run (Better run) Dont wait here I come no (Grab your gun... Fire) The fuel in my fire wont run dry (Endless supply) It burns bright And you better hide (Take a hike) I came for a fight, yeah (Truth youll find is) Until Tomorrow Is Mine (Victorys mine) Dont miss me too much'
 # DATA - mantras
-GREEN_LATTERN = 'In brightest day, in blackest night, No evil shall escape my sight. Let those who worship evil\'s might, Beware my power... Green Lantern\'s light!'
-JEDI_CODE = 'Emotion, yet peace. Ignorance, yet knowledge. Passion, yet serenity. Chaos, yet harmony. Death, yet the Force.'
-SITH_CODE = 'Peace is a lie. There is only Passion. Through Passion, I gain Strength. Through Strength, I gain Power. Through Power, I gain Victory. Through Victory my chains are Broken. The Force shall free me.'
-
+RA_CHANT = 'O great beast of the sky, please hear my cry. Transform thyself from orb of light and me victory in this fight. I beseech thee, grace our humble game. But first, I shall call out thy name! WINGED DRAGON OF RA!'
+SAVAGE_WOLF_FURY = 'O brilliant blade of coldest steel, rend the infinite darkness, and crush my enemies to nothing! SAVAGE WOLF FURY!'
+ANCIENT_CATASTROPHE = 'O power that lies at the root of all creation, o memory inscribed in ages past, hear my call and arise before me! ANCIENT CATASTROPHE'
 # the input, what we want to encode
 def huffman(message:str) -> float:
     message = message.upper()
@@ -32,25 +30,77 @@ def huffman(message:str) -> float:
     coding: dict = dict()   # key  -> a letter
                             # item -> a binary encoding
 
+    class Node: # NOT given to students
+        # TODO
+        
+        def __init__(self, weight, letter, left, right):
+            self.weight = weight
+            self.letter = letter
+            self.left = left
+            self.right = right
+            
 
-    # STEP 0
-    ## defining our data structures
+
     ## defining operations
+    ### recursively traverses the huffman tree to record the codes
+    def retrieve_codes(v: Node, path: str=''):
+        if v.letter != None: # if 'TODO': # TODO
+            coding[v.letter] = path # TODO
+        else:
+            #go left
+            retrieve_codes(v.left, path + '0') # TODO
+            #go right
+            retrieve_codes(v.right, path + '1') # TODO
 
     # STEP 1
-    ## counting the frequencies
+    ## counting the frequencies - TODO
+    for letter in message:
+        if letter not in freq.keys():
+            freq[letter] = 1
+        else:
+            freq[letter] += 1
+
+
+
 
     # STEP 2
-    ## initialize the nodes
+    ## initialize the nodes - TODO
+    nodes = list()
+    for letter, count in freq.items():
+        nodes.append(Node(weight = count, letter = letter, left = None, right = None))
 
-    # STEP 3
+
+
+    # STEP 3 - TODO
     ## combine each nodes until there's only one item in the nodes list
+    while len(nodes) > 1:
+        ## sort based on weight
+        nodes.sort(key=lambda x: x.weight, reverse=True)
+
+        ## get the first min
+        min_a: Node = nodes.pop()
+
+        ## get the second min
+        min_b: Node = nodes.pop()
+
+        ## combine the two
+        combined: Node = Node(min_a.weight + min_b.weight, None, min_a, min_b) # TODO
+
+        ## put the combined nodes back in the list of nodes
+        nodes.append(combined)
 
     # STEP 4
     ## reconstruct the codes
+    huff_root = nodes[0]
+    retrieve_codes(huff_root)
+    newmessage = ""
+    for i in message:
+        newmessage += coding[i]
+    result: str = str(newmessage) # TODO (hint coding[letter] -> code)
 
     # STEP 5
     ## analyize compression performance
+
     n_original_bits: int = len(message) * 8
     n_encoded_bits: int = len(result)
     compression_ratio: float = 1 - (n_encoded_bits / n_original_bits)
@@ -59,7 +109,7 @@ def huffman(message:str) -> float:
 
 # LYRICS
 plt.subplot(2, 1, 1)
-plt.suptitle('Lab 7 - Stapleton Analyzing Huffman')
+plt.suptitle('Lab 7 - Peregrin Analyzing Huffman')
 
 MAX_N: int = int(128 * 3 / 2)
 
@@ -67,44 +117,62 @@ MAX_N: int = int(128 * 3 / 2)
 ## POKEMON
 ratios: list = list()
 for i in range(1, MAX_N):
-    sub_message = POKEMON_LYRICS[0:i]
+    sub_message = MYSTERIOUS_DESTINY[0:i]
     _, _, ratio = huffman(sub_message)
     ratios.append(ratio)
+plt.plot(range(1, MAX_N), ratios, linestyle = '-.' , color = 'r', label='Mysterious Destiny')
+
 
 ## JIGGLE JIGGLE
 ratios: list = list()
 for i in range(1, MAX_N):
-    sub_message = JIGGLE_JIGGLE[0:i]
+    sub_message = AL_FINE[0:i]
     _, _, ratio = huffman(sub_message)
     ratios.append(ratio)
+plt.plot(range(1, MAX_N), ratios, linestyle = '-.', color = 'g', label='Al Fine')
 
 ## ALPHABET
 ratios: list = list()
 for i in range(1, MAX_N):
-    sub_message = ALPHABET[0:i]
+    sub_message = TOMORROW_IS_MINE[0:i]
     _, _, ratio = huffman(sub_message)
     ratios.append(ratio)
+
+plt.plot(range(1, MAX_N), ratios, linestyle = '-.', color = 'b', label='Tomorrow is Mine')
+
+plt.xlabel('Message Length')
+plt.ylabel('Compression Ratio')
+plt.legend()
 
 # PLOT 2
 plt.subplot(2, 1, 2)
 
-## SITH CODE
+## Ra chat
 ratios: list = list()
 for i in range(1, MAX_N):
-    sub_message = SITH_CODE[0:i]
+    sub_message = RA_CHANT[0:i]
     _, _, ratio = huffman(sub_message)
     ratios.append(ratio)
+plt.plot(range(1, MAX_N), ratios, linestyle = '-.' , label= 'Ra Chant')
+plt.legend()
 
 ## GREEN LATERN'S OATH
 ratios: list = list()
 for i in range(1, MAX_N):
-    sub_message = GREEN_LATTERN[0:i]
+    sub_message = SAVAGE_WOLF_FURY[0:i]
     _, _, ratio = huffman(sub_message)
     ratios.append(ratio)
+plt.plot(range(1, MAX_N), ratios, linestyle = '-.' , label= 'Savage Wolf Fury')
+plt.legend
 
 ## JEDI CODE
 ratios: list = list()
 for i in range(1, MAX_N):
-    sub_message = JEDI_CODE[0:i]
+    sub_message = ANCIENT_CATASTROPHE[0:i]
     _, _, ratio = huffman(sub_message)
     ratios.append(ratio)
+plt.plot(range(1, MAX_N), ratios, linestyle = '-.' , label='Ancient Catastrophe')
+plt.xlabel('length of message')
+plt.legend()
+
+plt.show()

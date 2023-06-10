@@ -19,33 +19,50 @@ nodes: list = list()
 coding: dict = dict()   # key  -> a letter
                         # item -> a binary encoding
 
-
+message = message.upper()
 # STEP 0 - TODO
 ## defining our data structures
 class Node: # NOT given to students
     # TODO
     
-    def __init__(self):
-        return
+    def __init__(self, weight, letter, left, right):
+        self.weight = weight
+        self.letter = letter
+        self.left = left
+        self.right = right
+        
+
 
 ## defining operations
 ### recursively traverses the huffman tree to record the codes
 def retrieve_codes(v: Node, path: str=''):
     global coding
     if v.letter != None: # if 'TODO': # TODO
-        coding[v.letter] = None # TODO
+        coding[v.letter] = path # TODO
     else:
-        retrieve_codes(None, None) # TODO
-        retrieve_codes(None, None) # TODO
+        #go left
+        retrieve_codes(v.left, path + '0') # TODO
+        #go right
+        retrieve_codes(v.right, path + '1') # TODO
 
 # STEP 1
 ## counting the frequencies - TODO
+for letter in message:
+    if letter not in freq.keys():
+        freq[letter] = 1
+    else:
+        freq[letter] += 1
+
+
 
 
 # STEP 2
 ## initialize the nodes - TODO
 nodes = list()
-nodes.append(Node(0, 'a'))
+for letter, count in freq.items():
+    nodes.append(Node(weight = count, letter = letter, left = None, right = None))
+
+
 
 # STEP 3 - TODO
 ## combine each nodes until there's only one item in the nodes list
@@ -60,7 +77,7 @@ while len(nodes) > 1:
     min_b: Node = nodes.pop()
 
     ## combine the two
-    combined: Node = None # TODO
+    combined: Node = Node(min_a.weight + min_b.weight, None, min_a, min_b) # TODO
 
     ## put the combined nodes back in the list of nodes
     nodes.append(combined)
@@ -69,7 +86,10 @@ while len(nodes) > 1:
 ## reconstruct the codes
 huff_root = nodes[0]
 retrieve_codes(huff_root)
-result: str = str() # TODO (hint coding[letter] -> code)
+newmessage = ""
+for i in message:
+    newmessage += coding[i]
+result: str = str(newmessage) # TODO (hint coding[letter] -> code)
 
 # STEP 5
 ## analyize compression performance
